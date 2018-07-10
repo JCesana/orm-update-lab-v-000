@@ -68,4 +68,8 @@ class Student
     student = Student.new_from_db(result)
     student 
   end
+  
+  def update
+    
+  end 
 end
