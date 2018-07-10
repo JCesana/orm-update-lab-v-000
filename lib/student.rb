@@ -52,4 +52,8 @@ class Student
     song 
   end 
   
+  def self.new_from_db(row)
+    
+  end 
+  
 end
