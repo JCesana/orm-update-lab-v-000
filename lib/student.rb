@@ -49,11 +49,16 @@ class Student
   def self.create(:name, :grade)
     student = Student.new(name, grade)
     student.save
-    song 
+    student 
   end 
   
   def self.new_from_db(row)
+    id = row[0]
+    name = row[1]
+    grade = row[2]
     
+    student = Student.new(name, grade, id)
+    student 
   end 
   
 end
