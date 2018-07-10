@@ -16,7 +16,7 @@ class Student
       CREATE TABLE IF NOT EXISTS students (
         id INTEGER PRIMARY KEY,
         name TEXT,
-        GRADE INTEGER
+        grade INTEGER
       );
     SQL
     
@@ -33,8 +33,8 @@ class Student
   
   def save
     sql = <<-SQL 
-      INSERT INTO students
-      
+      INSERT INTO students (name, grade)
+      VALUES (?, ?);
     SQL
   end 
 end
