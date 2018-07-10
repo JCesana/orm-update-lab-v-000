@@ -71,5 +71,5 @@ class Student
     student = Student.new_from_db(result)
     binding.pry
     student 
-  end 
+  end
 end
