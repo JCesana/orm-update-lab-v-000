@@ -66,7 +66,7 @@ class Student
     binding.pry
     sql = "SELECT * FROM students WHERE name = ?;"
     binding.pry
-    result = DB[:conn].execute(sql, name)
+    result = DB[:conn].execute(sql, name).flatten
     binding.pry
     student = Student.new_from_db(result)
     binding.pry
